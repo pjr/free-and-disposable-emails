@@ -1,11 +1,6 @@
 import sys
 from setuptools import setup, find_packages
 
-# Importlib-resources is needed with python under 3.9
-install_requires = []
-if sys.version_info < (3, 9):
-    install_requires.append("importlib-resources")
-
 setup(
     name="freemailchecker",
     version="0.1.1",
@@ -18,12 +13,10 @@ setup(
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     python_requires=">=3.6",
-    # If you have package data such as CSV files or templates, include them here
     package_data={
         "freemailchecker": ["data/*.csv"],
     },
-    install_requires=install_requires,
-    # If you want to include non-code files (like the README.md), specify them here
+    install_requires=["importlib-resources; python_version<'3.9'"],
     include_package_data=True,
     test_suite="tests",
 )
