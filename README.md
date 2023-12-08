@@ -24,6 +24,7 @@ False
 True
 >>> check_free_domain('microsoft.com')
 False 
+```
 
 # Contributions
 
@@ -35,3 +36,7 @@ The list of domains are in `src/freemailchecker/data/freemaildomains.csv`
 # Licence
 
 This code is released under an MIT licence.
+
+# Author
+
+Author is Philip Reynolds. First name dot last name at gmail.com.
