@@ -1,9 +1,8 @@
-import sys
 from setuptools import setup, find_packages
 
 setup(
     name="freemailchecker",
-    version="0.1.2",
+    version="0.1.3",
     author="Philip Reynolds",
     author_email="philip.reynolds@gmail.com",
     description="A simple python package which checks for the domain in a list of free and disposable email domains. Includes gmail.com and mailinator.com style",
