@@ -18,7 +18,7 @@ def _load_from_csv():
     """
 
     global DOMAINS
-    resource = files("freemailchecker.data").joinpath("freemaildomains.csv")
+    resource = files("freemailchecker").joinpath("data/freemaildomains.csv")
     with resource.open("r", encoding="utf-8") as csvfile:
         reader = csv.reader(csvfile)
         for row in reader:
